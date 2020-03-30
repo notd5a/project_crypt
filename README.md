@@ -1,51 +1,43 @@
-# Bookstore App Starter for Vaadin
+# Project Crypt.
 
-A project example for a Vaadin application that only requires a Servlet 3.1 container to run (no other JEE dependencies). The UI is built with Java only.
+## What is Project Crypt?
 
-The easiest way of using it is via [https://vaadin.com/start](https://vaadin.com/start) - you can choose the package naming you want.
+Project Crypt is a web program developed in order to help aid users make educated decisions when investing in cryptocurrencies. 
 
-## Prerequisites
+The program is designed in such a way that the user is able to securely login to their account, check out and follow cryptocurrencies that are on the market, check out live prices in real time, and inspect historical price data for any cryptocurrency the user wishes to see.
 
-The project can be imported into the IDE of your choice, with Java 8 or 11 installed, as a Maven project.
+This Project is created using the Vaadin framework.
 
-## Project Structure
+## Features
 
-The project is following the standard [Maven project layout](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html).
+Project Crypt has the following features in order to aid users with investing in Cryptocurrencies.
 
-## Workflow
+- User Account system
+  - User is able to log in and log out of their account and persist all data changed within their account (such as following cryptocurrencies, theme choices, personal details etc.)
+- Dashboard
+  - User is able to view any Cryptocurrency they may select that is on the market, view historical prices, trending Cryptocurrencies and followed Cryptocurrencies.
+- Hubs
+  - User is able to view all Cryptocurrencies on the market, and their corresponding data in a list view. Prices are updated per the live prices feature included in the program.
+- Live Prices
+  - User is able to view all the latest prices of all Cryptocurrencies in real time. All data is updated in both Dashboard and Hubs.
+- Secure and Private.
+  - Project crypt does not ask for your personal details. You have the option of inputting them within Settings, but you are not obligated to. We care about your privacy :)
+  - All passwords and usernames are encrypted using AES128 bit encryption. Your details are safe with us :)
+- *Light* and **Dark** mode
+  - We love dark mode :). Be flexible, and change the theme on the go as you read up on the latest cryptocurrency prices and as you learn about all of these Cryptocurrencies.
 
-To compile the entire project, run "mvn install" in the project root.
+## Functionality.
 
-Other basic workflow steps:
+Project Crypt is filled with an abundant amount of functionality. The Project is connected to its own local MySQL database, containing all of the prices and account details in a secure database. 
 
-- getting started
-- compiling the whole project
-  - run `mvn install` in project root
-- developing the application
-  - edit code in src/main
-  - run `mvn jetty:run` 
-  - open http://localhost:8080/
-- creating a production mode war
-  - run `mvn package -Pproduction` 
-- running in production mode
-  - run `mvn jetty:run -Pproduction`
-  - open http://localhost:8080/
+There are $5$ number of components in Project Crypt that can consist of the functionality part of the program, and are packaged in the backend folder of the program.
 
-### Running Integration Tests
+1. Secure Log in and Sign up using my own contemporary encryption method.
+2. View the latest prices of over 100 cryptocurrencies by navigating to Hubs.
+3. View historical prices for any cryptocurrency by navigating to your Dashboard.
+4. View login information
+5. Switch from light to dark mode on command.
 
-Integration tests are implemented using TestBench. The tests take a few minutes to run and are therefore included in a separate Maven profile. To run the tests using Google Chrome, execute
+## Personal Note 
 
-`mvn verify -Pit`
-
-and make sure you have a valid TestBench license installed. If the tests fail because of an old Chrome Driver or you want to use a different browser, you'll need to update the webdrivers.xml file in the project root.
-
-Profile `it` adds the following parameters to run integration tests:
-```sh
--Dwebdriver.chrome.driver=path_to_driver
--Dcom.vaadin.testbench.Parameters.runLocally=chrome
-```
-
-If you would like to run a separate test make sure you have added these parameters to VM Options of JUnit run configuration
-
-### Branching information:
-* `master` the latest version of the starter, using the latest platform version
+I hope you enjoy this product and that it enables you to invest wisely in your future endeavors relating cryptocurrencies.
